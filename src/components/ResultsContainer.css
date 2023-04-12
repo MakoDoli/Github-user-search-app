@@ -1,0 +1,148 @@
+* {
+  font-family: "Space Mono";
+  font-style: normal;
+}
+
+.container {
+  width: 327px;
+  height: 517px;
+  background: #1e2a47;
+  border-radius: 15px;
+  padding: 32px 24px;
+  color: white;
+}
+.container-light {
+  width: 327px;
+  height: 517px;
+  background: white;
+  border-radius: 15px;
+  padding: 32px 24px;
+  color: #4b6a9b;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.user-profile {
+  height: 70px;
+  margin-bottom: 34px;
+  display: flex;
+}
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.username {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #0079ff;
+}
+.parag-13-19 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+.user-bio {
+  width: 279px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+}
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 18px;
+  background: #141d2f;
+  border-radius: 10px;
+  width: 279px;
+  height: 85px;
+  margin-bottom: 24px;
+}
+.user-stats-light {
+  background: #f6f8ff;
+  border-radius: 10px;
+  width: 279px;
+  height: 85px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 18px;
+}
+.repos,
+.followers,
+.following {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+}
+.location {
+  margin-right: 19px;
+}
+.icon {
+  margin-right: 13px;
+}
+.links {
+  display: inline-block;
+}
+.contact {
+  margin-bottom: 16px;
+}
+a {
+  text-decoration: none;
+  color: #4b6a9b;
+}
+
+@media screen and (min-width: 880px) {
+  .container,
+  .container-light {
+    width: 579px;
+    height: 481px;
+  }
+  .user-bio {
+    width: 493px;
+    font-size: 15px;
+  }
+  .user-stats,
+  .user-stats-light {
+    width: 493px;
+  }
+  .user-links {
+    display: flex;
+  }
+  .twitter-work {
+    margin-left: 65px;
+  }
+  .user-stats {
+    margin-bottom: 30px;
+  }
+  .avatar {
+    width: 117px;
+    height: 117px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .user-profile {
+    height: 117px;
+  }
+  .parag-13-19 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .repos,
+  .followers,
+  .following {
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+  }
+}

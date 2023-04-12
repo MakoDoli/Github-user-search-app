@@ -1,0 +1,27 @@
+import "./App.css";
+import styled from "styled-components";
+import { useState } from "react";
+function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const styles = {
+    container: {
+      background: `${darkMode ? "red" : "blue"}`,
+    },
+  };
+  return (
+    <Main class="container" mode={darkMode}>
+      <button
+        className={darkMode ? "button dark" : "button"}
+        style={styles.container}
+        onClick={() => setDarkMode(!darkMode)}
+      ></button>
+    </Main>
+  );
+}
+
+export default App;
+
+const Main = styled.div`
+  background: ${(props) => (props.mode ? "#141D2F" : "#F6F8FF")};
+  height: 100vh;
+`;
